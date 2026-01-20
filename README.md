@@ -8,7 +8,8 @@
 5. create github workflow file
    -> all taskdefination(nodejs-app-task-definition) json file in pipeline 
 
-6. if getting issue create service again with same name 
+6. if getting issue create service again with same name
+7. also unable 5000 port
 
 
 

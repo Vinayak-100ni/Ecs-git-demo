@@ -1,3 +1,20 @@
+1. Create ECR (nodejs-app)
+2. create ECS cluster (DevCluster)
+3. task definition (Task Definition family name:- nodejs-app-task-definition)
+   -> create iamrole (ecsTaskExecutionRole, containerService)
+   -> name(nodejs-app) and (ECR)repo url
+4. Create an service
+   -> service name (nodejs-app-service)
+5. create github workflow file
+   -> all taskdefination(nodejs-app-task-definition) json file in pipeline 
+
+6. if getting issue create service again with same name 
+
+
+
+
+
+
 # Nodejs app with rest and graphql example
 
 An example of GraphQL queries/mutations with Node and Express js.

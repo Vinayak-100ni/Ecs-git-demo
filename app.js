@@ -5,11 +5,17 @@ const PORT = process.env.PORT || 5000;
 // Middleware to parse JSON
 app.use(express.json());
 
-// Import routes
-const tutorialRoutes = require("./app/routes/tutorial.routes");
-app.use("/api/tutorials", tutorialRoutes);
+// Routes
+app.get("/api/tutorials", (req, res) => {
+  res.json({ message: "List of tutorials" });
+});
 
-// Health check route
+app.post("/api/tutorials", (req, res) => {
+  const { title } = req.body;
+  res.json({ message: `Tutorial '${title}' created!` });
+});
+
+// Health check
 app.get("/health", (req, res) => res.send("OK"));
 
 // Start server
